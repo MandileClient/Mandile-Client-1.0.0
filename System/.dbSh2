@@ -1,0 +1,13 @@
+|usr|pss|comment| OR |IP|IP|comment|
+|"Admin"|"STCD-1"|""|
+|"100.0.0.0"|"IP"|"IP Charts"|
+|"101.0.0.0"|"IP"|"IP Charts"|
+|"101.0.0.1"|"IP"|"IP Charts"|
+|"101.0.0.2"|"IP"|"IP Charts"|
+|"101.54.0.6"|"IP"|"IP Charts"|
+
+
+array|
+    randomAllocate [IP|challstr|comment]
+    allocate [IP|random ? < 1 > 1 > 4|comment]
+|
