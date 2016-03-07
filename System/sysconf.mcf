@@ -5,3 +5,18 @@ MDX 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0
 
 startUpCommand {
     systemStartup(attrribute("1") || permissions(false) || bootMemory(this(myBootMemory("0"))) || directory("/System/..") command("run -h myConfig \\true sysconf.mcf | atr -2"))
+}
+
+bootSector {
+    "0" ++gxt
+}
+
+myCommand {
+    "command" ++usr|reply|exist(true|false)|return
+    "print" ++command|true|return
+}
+
+myDatabase {
+    "dbSh2" ++db|charts|line|usr|pss|exist(true|false)|return|result|callFor|name|usr|pss|return
+    "login" ++dbSh2
+}
