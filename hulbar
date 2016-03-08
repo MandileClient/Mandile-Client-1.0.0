@@ -1,0 +1,8 @@
+exec: ({
+  hulbar-show = true
+  forOnFileCall()
+    exec: ({ 
+      this
+    })
+  execObjShell(hulbar-show)
+})
