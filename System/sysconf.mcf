@@ -19,4 +19,16 @@ myCommand {
 myDatabase {
     "dbSh2" ++db|charts|line|usr|pss|exist(true|false)|return|result|callFor|name|usr|pss|return
     "login" ++dbSh2
+} else {
+    cont()
+}
+
+forOnStartup {
+    addNewProcess(this)
+} else {
+    cont()
+} else forOnShutdown {
+    cont(shutDown)
+} else forOnError {
+    cont(reset)
 }
