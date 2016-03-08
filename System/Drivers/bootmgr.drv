@@ -1,0 +1,14 @@
+myClient {
+  bootmgr {
+    start()
+    exec {
+      *bootmgr
+    }
+  }
+  sysmgr {
+    start()
+    exec {
+      *sysmgr
+    }
+  }
+}
