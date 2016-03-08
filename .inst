@@ -10,6 +10,7 @@ if mandile (notInst == true) {
         inst(init)
     } else {
         inst(submodule)
+        start(init)
     }
 } else {
     ignoreFile(this)
