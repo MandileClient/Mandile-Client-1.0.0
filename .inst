@@ -1,0 +1,17 @@
+~init
+  ~submodule
+    ~dash
+    ~darkrain
+    ~startup
+    ~database
+
+if mandile (notInst == true) {
+    readFile(init) {
+        inst(init)
+    } else {
+        inst(submodule)
+    }
+} else {
+    ignoreFile(this)
+    cont(stProcess)
+}
