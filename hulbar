@@ -5,4 +5,5 @@ exec: ({
       this
     })
   execObjShell(hulbar-show)
+  execObjShell(*temp | all)
 })
