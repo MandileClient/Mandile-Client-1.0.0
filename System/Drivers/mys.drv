@@ -1,0 +1,9 @@
+mys {
+  myClient {
+    start() {
+      exec {
+        mys(command_mys(startup))
+      }
+    }
+  }
+}
