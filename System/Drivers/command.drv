@@ -1,0 +1,25 @@
+myClient() {
+  process() {
+    thisCommand() {
+      start() {
+        command_int("x8")
+        command_int("x12")
+        command_int("x16")
+        command_int("x24")
+        command_int("x32")
+        command_int("x40")
+        command_int("x52")
+        command_int("x64")
+        command_int("x70")
+        command_int("x78")
+        command_int("x84")
+        command_int("x92")
+        command_int("x108")
+      } else {
+        shutDown()
+    } else {
+      throwError()
+  } else {
+    killProcess(this)
+    shutDown()
+}
