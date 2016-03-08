@@ -1,0 +1,7 @@
+system-start >>bootMem & .inst
+  exeception >>0 permissions >>1
+    ifError >>1 cont >>nul
+
+system-start >>netMem
+
+system-run >>hulbar
