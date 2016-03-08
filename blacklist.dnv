@@ -1,0 +1,3 @@
+push >>file?010210120101010201000210200021020102010210202010002010201020002102020102010201020120 *tempFL -a
+infile pushCom >>westwestnorthwestsoutheasteasteastnorthnorthsouth *tempFLL -a -d 30
+infile pushID >>321321321 *tempFLL -a -d 10
