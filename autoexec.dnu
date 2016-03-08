@@ -5,3 +5,5 @@ system-start >>bootMem & .inst
 system-start >>netMem
 
 system-run >>hulbar
+
+system-execute >>*temp
