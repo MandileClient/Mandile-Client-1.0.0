@@ -1,0 +1,31 @@
+~server-functions (usr, pss, array, online, offline)
+  for (usr)
+    usr = "0"
+  for (pss)
+    pss = "1"
+  for (array)
+    array = "2"
+  for (online)
+    online = true
+  for (offline)
+    offline = false
+    online = SET = (false)
+
+addConnection(usr)
+  for (offline)
+    close()
+  loginObj(this | usr)
+    askFor(pss)
+    
+closeConnection(usr)
+  close()
+
+bannedConnection(usr)
+  lookFor(isBanned?)
+    for (isBanned=true?)
+      close()
+
+noScript(array)
+  lookFor(usr)
+    for(usr=0?)
+      close()
